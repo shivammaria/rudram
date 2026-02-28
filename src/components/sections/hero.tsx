@@ -66,6 +66,16 @@ export default function HeroSection() {
       );
     }
 
+    if (currentSlideContent.id === 'automation') {
+      return (
+        <Link href="/services">
+          <Button size="lg" variant="outline" className="text-lg px-8 py-6 glass-morphic border-white/50 hover:border-white text-white hover:bg-black/80 hover:text-white">
+            {currentSlideContent?.cta.secondary.text || "Learn More"}
+          </Button>
+        </Link>
+      );
+    }
+
     return (
       <StartJourneyModal>
         <Button size="lg" variant="outline" className="text-lg px-8 py-6 glass-morphic border-white/50 hover:border-white text-white hover:bg-black/80 hover:text-white">
