@@ -15,12 +15,11 @@ import { MessageSquare } from "lucide-react";
 import content from "@/app/content/case-stories.json";
 import Autoplay from "embla-carousel-autoplay";
 import { useRef } from "react";
-import { HealthCheckModal } from "@/components/modals/health-check-modal";
-import { StartJourneyModal } from "@/components/modals/start-journey-modal";
+import Link from "next/link";
 
 export default function TestimonialCarousel() {
     const { testimonials, cta } = content;
-    const plugin = useRef(Autoplay({ delay: 2000, stopOnInteraction: true }));
+    const plugin = useRef(Autoplay({ delay: 5000, stopOnInteraction: true }));
 
   return (
     <section id="testimonials" className="w-full py-20 lg:py-32">
@@ -70,17 +69,12 @@ export default function TestimonialCarousel() {
             <h2 className="text-3xl md:text-4xl font-bold tracking-tighter mb-6 text-glow bg-clip-text text-transparent bg-gradient-to-r from-white to-neutral-300">
                 {cta.headline}
             </h2>
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-                <HealthCheckModal defaultServiceId="health-check">
-                    <Button size="lg" className="btn-glow text-lg px-8 py-6 animate-pulse-glow">
-                        {cta.primaryCta.text}
+            <div className="flex items-center justify-center">
+                <Link href="/contact" passHref>
+                    <Button size="lg" className="btn-glow text-lg px-12 py-6 animate-pulse-glow">
+                        Contact Us
                     </Button>
-                </HealthCheckModal>
-                <StartJourneyModal>
-                    <Button size="lg" variant="outline" className="text-lg px-8 py-6 glass-morphic border-white/50 hover:border-white text-white hover:bg-white/20 hover:text-black">
-                        {cta.secondaryCta.text}
-                    </Button>
-                </StartJourneyModal>
+                </Link>
             </div>
         </div>
 

@@ -4,11 +4,9 @@
 import Link from 'next/link';
 import { Button } from "@/components/ui/button";
 import servicesContent from "@/app/content/services.json";
-import { HealthCheckModal } from '@/components/modals/health-check-modal';
-import { StartJourneyModal } from '@/components/modals/start-journey-modal';
 
 export default function CtaBanner() {
-    const { headline, primaryCta, secondaryCta } = servicesContent.ctaBanner;
+    const { headline } = servicesContent.ctaBanner;
 
     return (
         <section className="w-full py-20 lg:py-24">
@@ -17,17 +15,12 @@ export default function CtaBanner() {
                     <h2 className="text-3xl md:text-4xl font-bold tracking-tighter mb-6 text-glow bg-clip-text text-transparent bg-gradient-to-r from-white to-neutral-300">
                         {headline}
                     </h2>
-                    <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-                        <HealthCheckModal defaultServiceId="health-check">
-                            <Button size="lg" className="btn-glow text-lg px-8 py-6 animate-pulse-glow">
-                                {primaryCta.text}
+                    <div className="flex items-center justify-center">
+                        <Link href="/contact" passHref>
+                            <Button size="lg" className="btn-glow text-lg px-12 py-6 animate-pulse-glow">
+                                Contact Us
                             </Button>
-                        </HealthCheckModal>
-                        <StartJourneyModal>
-                            <Button size="lg" variant="outline" className="text-lg px-8 py-6 glass-morphic border-white/50 hover:border-white text-white hover:bg-white/20 hover:text-black">
-                                {secondaryCta.text}
-                            </Button>
-                        </StartJourneyModal>
+                        </Link>
                     </div>
                 </div>
             </div>

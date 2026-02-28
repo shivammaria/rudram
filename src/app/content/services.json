@@ -57,13 +57,7 @@
     ],
     "ctaBanner": {
         "headline": "Ready to unlock clarity across your business data?",
-        "primaryCta": {
-            "text": "Book a Data Health Check",
-            "href": "#contact"
-        },
-        "secondaryCta": {
-            "text": "Get a Free Intro Call",
-            "href": "#contact"
-        }
+        "buttonText": "Contact Us",
+        "href": "/contact"
     }
 }

@@ -10,8 +10,8 @@
   "featuredStory": {
     "industry": "Retail Pilot",
     "challenge": "Weekly reports took 12+ hours, across multiple complex spreadsheets.",
-    "solution": "Built a single interactive dashboard that automated data aggregation and visualization.",
-    "result": "Reporting time cut by over 80%.",
+    "solution": "Built a single interactive dashboard that automated data aggregation and visualization with Rudram.",
+    "result": "Reporting time cut by over 80% thanks to Rudram.",
     "visual": {
       "before": { "title": "Chaotic Spreadsheets", "icon": "Sheet" },
       "after": { "title": "Clean Dashboard", "icon": "LayoutDashboard" }
@@ -24,16 +24,16 @@
       ]
     },
     "cta": {
-      "text": "See How We Can Do This for You",
-      "href": "#contact"
+      "text": "See How Rudram Can Do This for You",
+      "href": "/contact"
     }
   },
   "stories": [
     {
       "slug": "manufacturing-pilot",
       "title": "Manufacturing Pilot",
-      "description": "Found $AUD 600,000/year in hidden material leakage costs during our Health Check.",
-      "content": "A mid-sized manufacturing client was struggling with inventory management. They knew there were inefficiencies but couldn't pinpoint them in their scattered data.\n\nOur Data Health Check connected their procurement, production, and waste management systems. We deployed a unified data model to track material flow from entry to exit.\n\nWe identified a consistent material leakage issue in one of their production lines, amounting to nearly $AUD 600,000 in annual losses. We built a simple, real-time dashboard to monitor this variance, allowing them to fix the process and prevent future losses.",
+      "description": "Found $AUD 600,000/year in hidden material leakage costs during our Rudram Health Check.",
+      "content": "A mid-sized manufacturing client was struggling with inventory management. They knew there were inefficiencies but couldn't pinpoint them in their scattered data.\n\nOur Rudram Data Health Check connected their procurement, production, and waste management systems. We deployed a unified data model to track material flow from entry to exit.\n\nWe identified a consistent material leakage issue in one of their production lines, amounting to nearly $AUD 600,000 in annual losses. Rudram built a simple, real-time dashboard to monitor this variance, allowing them to fix the process and prevent future losses.",
       "image": "https://picsum.photos/seed/case1/1200/600",
       "visual": {
         "type": "graph",
@@ -47,8 +47,8 @@
     {
       "slug": "real-estate-crm",
       "title": "Real Estate CRM",
-      "description": "Cleaned & restructured 50k+ contacts for a fully automated marketing pipeline.",
-      "content": "A real estate agency had over 50,000 contacts in a messy, inconsistent CRM, making targeted marketing impossible and leading to missed opportunities.\n\nWe undertook a massive data cleaning and restructuring project. We standardized formats, removed thousands of duplicates, and enriched the data with property preferences and historical engagement data.\n\nThe result was a clean, segmented database that powered a new automated marketing pipeline, increasing lead qualification rates by 40% and boosting agent productivity.",
+      "description": "Rudram cleaned & restructured 50k+ contacts for a fully automated marketing pipeline.",
+      "content": "A real estate agency had over 50,000 contacts in a messy, inconsistent CRM, making targeted marketing impossible and leading to missed opportunities.\n\nRudram undertook a massive data cleaning and restructuring project. We standardized formats, removed thousands of duplicates, and enriched the data with property preferences and historical engagement data.\n\nThe result was a clean, segmented database powered by Rudram that drove a new automated marketing pipeline, increasing lead qualification rates by 40% and boosting agent productivity.",
       "image": "https://picsum.photos/seed/case2/1200/600",
       "visual": {
         "type": "flowchart",
@@ -62,8 +62,8 @@
     {
       "slug": "sme-finance-team",
       "title": "SME Finance Team",
-      "description": "Replaced 20+ spreadsheets with one simple, powerful Data App.",
-      "content": "The finance team at a growing SME was drowning in over 20 different spreadsheets for financial reporting. The process was manual, error-prone, and took days each month, delaying critical financial insights.\n\nWe developed a centralized Data App that connected directly to their accounting software and other financial data sources. It automated all their standard reports—P&L, cash flow, and departmental budgets—into a single, interactive dashboard.\n\nThis reduced their monthly reporting time by 90% and completely eliminated manual data entry errors, freeing the team to focus on strategic financial analysis instead of data wrangling.",
+      "description": "Rudram replaced 20+ spreadsheets with one simple, powerful Data App.",
+      "content": "The finance team at a growing SME was drowning in over 20 different spreadsheets for financial reporting. The process was manual, error-prone, and took days each month, delaying critical financial insights.\n\nRudram developed a centralized Data App that connected directly to their accounting software and other financial data sources. It automated all their standard reports—P&L, cash flow, and departmental budgets—into a single, interactive dashboard.\n\nThis reduced their monthly reporting time by 90% and completely eliminated manual data entry errors, freeing the team to focus on strategic financial analysis instead of data wrangling, thanks to Rudram.",
       "image": "https://picsum.photos/seed/case3/1200/600",
       "visual": {
         "type": "graph",
@@ -77,8 +77,8 @@
     {
       "slug": "ecommerce-analytics",
       "title": "E-commerce Analytics",
-      "description": "Boosted online sales by 25% with a custom sales and marketing dashboard.",
-      "content": "An e-commerce startup was struggling to understand customer behavior and marketing ROI. Their data was siloed in Shopify, Google Analytics, and social media platforms, making a unified view impossible.\n\nWe built a custom analytics dashboard that integrated all their key data sources. The dashboard provided a clear view of the complete customer journey, top-performing products, and marketing channel effectiveness.\n\nWith these new insights, they were able to optimize their ad spend and personalize promotions, leading to a 25% increase in sales within the first quarter and a significant improvement in marketing ROI.",
+      "description": "Boosted online sales by 25% with a custom Rudram sales and marketing dashboard.",
+      "content": "An e-commerce startup was struggling to understand customer behavior and marketing ROI. Their data was siloed in Shopify, Google Analytics, and social media platforms, making a unified view impossible.\n\nRudram built a custom analytics dashboard that integrated all their key data sources. The dashboard provided a clear view of the complete customer journey, top-performing products, and marketing channel effectiveness.\n\nWith these new Rudram insights, they were able to optimize their ad spend and personalize promotions, leading to a 25% increase in sales within the first quarter and a significant improvement in marketing ROI.",
       "image": "https://picsum.photos/seed/case4/1200/600",
       "visual": {
         "type": "graph",
@@ -91,10 +91,10 @@
     }
   ],
   "roiSection": {
-    "headline": "The ROI of Clarity",
+    "headline": "The ROI of Clarity with Rudram",
     "charts": {
       "timeSaved": {
-        "title": "Time Saved Across Clients",
+        "title": "Time Saved Across Rudram Clients",
         "data": [
           { "client": "Client A", "value": 60 },
           { "client": "Client B", "value": 80 },
@@ -102,7 +102,7 @@
         ]
       },
       "costSavings": {
-        "title": "Hidden Cost Savings",
+        "title": "Hidden Cost Savings with Rudram",
         "data": [
             { "month": "Jan", "savings": 0 },
             { "month": "Feb", "savings": 5000 },
@@ -111,7 +111,7 @@
         ]
       },
       "growthConfidence": {
-        "title": "Growth Confidence",
+        "title": "Growth Confidence with Rudram",
         "before": 45,
         "after": 95
       }
@@ -261,13 +261,7 @@
   ],
   "cta": {
     "headline": "Your business could be our next success story.",
-    "primaryCta": {
-      "text": "Book Your Data Health Check",
-      "href": "#contact"
-    },
-    "secondaryCta": {
-      "text": "Explore Our Services",
-      "href": "/services"
-    }
+    "buttonText": "Contact Us",
+    "href": "/contact"
   }
 }
