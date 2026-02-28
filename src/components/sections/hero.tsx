@@ -1,4 +1,3 @@
-
 "use client";
 
 import React, { useEffect, useRef, useState } from "react";
@@ -22,7 +21,7 @@ export default function HeroSection() {
   const [current, setCurrent] = useState(0);
 
   const plugin = useRef(
-      Autoplay({ delay: 5000, stopOnInteraction: true })
+      Autoplay({ delay: 10000, stopOnInteraction: true })
   );
 
   useEffect(() => {
