@@ -6,18 +6,15 @@ import content from "@/app/content/partners.json";
 import Image from "next/image";
 
 const AwsLogo = () => (
-    <svg xmlns="http://www.w3.org/2000/svg" width="55" height="33" viewBox="0 0 55 33" fill="none" className="h-12 w-auto">
-        <path d="M7.34766 22.5195C7.34766 22.5195 9.17969 22.0996 10.0195 21.0547C10.8594 20.0098 10.5078 17.5195 10.5078 17.5195L8.90039 12.334L6.09375 14.502L7.34766 22.5195Z" fill="#FF9900"/>
-        <path d="M22.8281 3.33984L14.7305 17.5195H22.0996L23.8516 12.334L22.8281 3.33984Z" fill="#232F3E"/>
-        <path d="M30.6523 17.5195H38.0215L31.6758 3.33984L30.6523 17.5195Z" fill="#232F3E"/>
-        <path d="M43.9023 22.5195C43.9023 22.5195 42.0703 22.0996 41.2305 21.0547C40.3906 20.0098 40.7422 17.5195 40.7422 17.5195L42.3496 12.334L45.1562 14.502L43.9023 22.5195Z" fill="#FF9900"/>
-        <path d="M22.0998 17.5195L14.7307 17.5195L19.3811 26.6895C19.3811 26.6895 20.2209 28.3789 22.0998 28.3789C23.9788 28.3789 24.5901 26.6895 24.5901 26.6895L22.0998 17.5195Z" fill="#FF9900"/>
-        <path d="M38.0215 17.5195H30.6523L27.9102 26.6895C27.9102 26.6895 28.75 28.3789 30.6289 28.3789C32.5078 28.3789 33.1191 26.6895 33.1191 26.6895L38.0215 17.5195Z" fill="#FF9900"/>
+    <svg viewBox="0 0 77 46" fill="none" xmlns="http://www.w3.org/2000/svg" className="h-12 w-auto">
+      <path d="M14.053 25.464c-2.34 0-3.9-.38-5.316-1.012l.822-3.225c1.139.632 2.784 1.011 4.493 1.011 2.214 0 3.353-.948 3.353-2.15 0-1.138-.759-1.77-3.226-2.402-3.1-.758-5.123-1.834-5.123-4.806 0-2.846 2.34-4.806 6.134-4.806 1.96 0 3.479.316 4.807.948l-.759 3.099c-.948-.506-2.403-.822-3.795-.822-1.833 0-2.846.822-2.846 1.77 0 1.012.949 1.518 3.415 2.214 3.226.885 4.933 2.15 4.933 4.932 0 3.352-2.53 5.249-6.892 5.249zM30.435 25.02h-4.048l-4.11-12.394h4.301l2.023 7.146 1.96-7.146h4.048l2.024 7.146 1.897-7.146h4.11l-4.174 12.395h-4.048l-2.023-7.02-1.96 7.02zM56.68 19.329c0 3.605-2.34 6.134-6.26 6.134-3.605 0-6.07-2.34-6.07-6.07 0-3.92 2.72-6.26 6.45-6.26.632 0 1.265.063 1.897.19v-4.616h4.048v10.622h-.065zm-4.047-2.403c-.443-.126-1.012-.19-1.518-.19-1.518 0-2.403.949-2.403 2.53 0 1.454.759 2.34 2.214 2.34.822 0 1.518-.443 1.707-1.012v-3.668z" fill="#232F3E"/>
+      <path d="M38.165 35.532c7.716 0 14.166-3.731 16.254-8.916l3.224 1.391c-2.529 7.59-10.181 12.016-19.478 12.016-9.044 0-16.633-4.427-19.478-11.13l3.225-1.392c2.15 5.249 8.537 9.031 16.253 9.031z" fill="#FF9900"/>
+      <path d="M59.48 27.429l1.897 3.541-3.1 2.53 1.203-6.071zM15.12 27.429l-3.1-2.53 1.897-3.541 1.203 6.071z" fill="#FF9900"/>
     </svg>
 );
 
 const MicrosoftLogo = () => (
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 21" fill="currentColor" className="h-10 w-auto">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 21" className="h-10 w-auto">
         <path fill="#f25022" d="M1 1h9v9H1z"/>
         <path fill="#7fba00" d="M11 1h9v9h-9z"/>
         <path fill="#00a4ef" d="M1 11h9v9H1z"/>
@@ -26,7 +23,7 @@ const MicrosoftLogo = () => (
 );
 
 const XeroLogo = () => (
-    <Image src="/images/xero.png" alt="Xero Logo" width={80} height={40} className="h-10 w-auto" />
+    <Image src="/images/xero.png" alt="Xero Logo" width={80} height={40} className="h-10 w-auto object-contain" />
 );
 
 const logos: { [key: string]: React.ReactNode } = {
@@ -37,8 +34,8 @@ const logos: { [key: string]: React.ReactNode } = {
 
 const PartnerCard = ({ partner }: { partner: typeof content.partners[0] }) => (
     <Card className="glass-morphic card-glow border-primary/20 flex flex-col items-center p-6 text-center h-full transition-all duration-300 ease-in-out hover:-translate-y-2">
-        <CardHeader className="p-0 mb-4 items-center">
-            <div className="h-16 flex items-center justify-center">
+        <CardHeader className="p-0 mb-4 items-center w-full">
+            <div className="h-20 w-full flex items-center justify-center">
               {logos[partner.logo]}
             </div>
         </CardHeader>
@@ -69,4 +66,3 @@ export default function CloudPartners() {
     </section>
   );
 }
-
