@@ -6,12 +6,13 @@ import content from "@/app/content/partners.json";
 import Image from "next/image";
 
 const AwsLogo = () => (
-    <div className="flex items-center justify-center font-black text-xl md:text-2xl tracking-tighter uppercase italic">
-      <span className="text-foreground">AWS</span>
-      <span className="text-primary ml-1 relative">
-        Cloud
-        <span className="absolute -bottom-1 left-0 w-full h-1 bg-primary/30 rounded-full" />
-      </span>
+    <div className="relative h-10 w-24 md:h-12 md:w-32">
+        <Image 
+            src="/images/aws.jpg" 
+            alt="AWS Logo" 
+            fill 
+            className="object-contain" 
+        />
     </div>
 );
 
