@@ -6,7 +6,7 @@ import content from "@/app/content/partners.json";
 import Image from "next/image";
 
 const AwsLogo = () => (
-    <div className="relative h-12 w-32 md:h-16 md:w-40">
+    <div className="relative h-12 w-32 md:h-14 md:w-36">
         <Image 
             src="/images/aws.png" 
             alt="AWS Logo" 
@@ -46,7 +46,9 @@ const logos: { [key: string]: React.ReactNode } = {
 const PartnerCard = ({ partner }: { partner: typeof content.partners[0] }) => (
     <Card className="glass-morphic card-glow border-primary/20 flex flex-col items-center p-8 text-center h-full transition-all duration-300 ease-in-out hover:-translate-y-2">
         <CardHeader className="p-0 mb-8 items-center w-full">
-            <div className="h-20 w-full flex items-center justify-center">
+            {/* Added a solid white background and rounded corners to the logo container 
+                to cleanly frame logos that might have non-transparent backgrounds */}
+            <div className="h-24 w-full flex items-center justify-center bg-white rounded-xl p-4 shadow-sm">
                 {logos[partner.logo]}
             </div>
         </CardHeader>
