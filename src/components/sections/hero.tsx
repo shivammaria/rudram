@@ -56,6 +56,16 @@ export default function HeroSection() {
       );
     }
 
+    if (currentSlideContent.id === 'ai-apps') {
+      return (
+        <Link href="/case-studies">
+          <Button size="lg" variant="outline" className="text-lg px-8 py-6 glass-morphic border-white/50 hover:border-white text-white hover:bg-black/80 hover:text-white">
+            {currentSlideContent?.cta.secondary.text || "View Case Studies"}
+          </Button>
+        </Link>
+      );
+    }
+
     return (
       <StartJourneyModal>
         <Button size="lg" variant="outline" className="text-lg px-8 py-6 glass-morphic border-white/50 hover:border-white text-white hover:bg-black/80 hover:text-white">
